@@ -10,7 +10,7 @@
   <!-- Temas -->
   <plone:static
       type="theme"
-      name="capa"
+      name="institucionais"
       directory="themes/capa"
       />
 
