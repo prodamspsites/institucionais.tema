@@ -1,0 +1,392 @@
+/*
+ *
+ * CSS com estilos genéricos para todos os temas
+ *
+ * @Autores
+ *
+ * - Danilo Sartorelli Barbato
+ * - Moisés de Aguiar Júnior
+ * - Wellington Braga
+ *
+ * @Referencias
+ *
+ * Lista de padrões, convenções e boas praticas CSS que devem ser seguidas.
+ * https: //github.com/necolas/idiomatic-css/tree/master/translations/pt-BR
+ *
+ * Plugins para ordenar os atributos de CSS.
+ * http://csscomb.com/
+ *
+ * Validador de CSS do W3C.
+ * http://jigsaw.w3.org/css-validator/
+ */
+
+
+
+/* ==========================================================================
+   Adaptações responsivas
+   ========================================================================== */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .navbar .barra-cinza .container-wrapper #acesso{
+    padding: 0;
+    width: 300px;
+    margin-left: 0;
+  }
+  .navbar .barra-cinza #acesso .imgI{
+    margin-top: -23px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .navbar .barra-cinza .container-wrapper #acesso{
+    width: 500px !important;
+    padding-top: 4px !important;
+    margin-left: 10px !important;
+    font-size: 0.9em;
+  }
+
+  .navbar .barra-cinza #acesso .imgI{
+    margin: -17px 0 0 145px !important;
+  }
+  .navbar .barra-cinza #acesso #transparenciasp{
+    padding-top: 2px !important;
+    margin-left: 95px !important;
+    font-size: 0.84em !important;
+  }
+
+  .navbar .barra-cinza{
+    height: 31px !important;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+html body{
+  font-family: "HelveticaNeue",Helvetica,"Helvetica Neue",Tahoma,sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  vertical-align: baseline;
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.bold {
+  font-weight: 700;
+}
+
+
+/* ==========================================================================
+   Barra Cinza do Topo
+   ========================================================================== */
+
+.navbar .barra-cinza{
+  height: 71px;
+  padding: 0;
+  background: none repeat scroll 0 0 #646464;
+}
+
+.bold {
+  font-weight: 700;
+}
+.em09 {
+  font-size: 0.9em;
+  line-height: 1.1em;
+}
+.navbar .barra-cinza .container{
+  padding-left: 1.7em;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+.navbar .container:after{
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+#acesso .four a {
+  font-size:0.9em;
+}
+.upper {
+  text-transform: uppercase;
+}
+.navbar .barra-cinza #acesso{
+  padding: 0;
+  padding-top: 10px !important;
+  margin-left: 20px;
+  width: 240px;
+}
+.navbar .barra-cinza #acesso a {
+  line-height: 23px;
+  font-size:1.0em;
+  color: #cacaca;
+  display: inline-block;
+  float: left;
+}
+.navbar .barra-cinza #acesso .imgI{
+  background: url("../img/sprite.png") repeat scroll -374px 0;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  margin: -30px 0 0 165px;
+}
+.navbar .barra-cinza #acesso #transparenciasp{
+  margin-left: 0;
+  padding-top: 5px;
+  font-size: 1.0em;
+}
+
+.barra-cinza{
+  background: none repeat scroll 0 0 #646464;
+}
+.container{
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+.navbar .full, .navbar .barra-cinza, .navbar .full-preto {
+  clear: both;
+  display: block;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+.em09 {
+  font-size: 0.9em;
+  line-height: 1.1em;
+}
+.navbar .barra-cinza .container{
+  padding-left: 1.7em;
+}
+.navbar .container:after{
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+#acesso a{
+  color: #cacaca;
+  display: inline-block;
+  float: left;
+}
+#acesso .four a {
+  font-size:0.9em;
+}
+.upper {
+  text-transform: uppercase;
+}
+
+/* Definições de largura do site */
+
+.container-wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+/* Adapta sistema de grids para html 5*/
+div.width-1, header.width-1,
+section.width-1, nav.width-1 {
+  width:  4%;
+}
+div.width-2, header.width-2,
+section.width-2, nav.width-2 {
+  width: 10.25%;
+}
+div.width-3, header.width-3,
+section.width-3, nav.width-3 {
+  width: 16.5%;
+}
+div.width-4, header.width-4,
+section.width-4, nav.width-4 {
+  width: 22.75%;
+}
+div.width-5, header.width-5,
+section.width-5, nav.width-5 {
+  width: 29%;
+  }
+div.width-6, header.width-6,
+section.width-6, nav.width-6 {
+  width: 35.25%;
+}
+div.width-7, header.width-7,
+section.width-7, nav.width-7 {
+  width: 41.5%;
+}
+div.width-8, header.width-8,
+section.width-8, nav.width-8 {
+  width: 47.75%;
+}
+div.width-9, header.width-9,
+section.width-9, nav.width-9 {
+  width: 54%;
+}
+div.width-10, header.width-10,
+section.width-10, nav.width-10 {
+  width: 60.25%;
+}
+div.width-11, header.width-11,
+section.width-11, nav.width-11 {
+  width: 66.5%;
+}
+div.width-12, header.width-12,
+section.width-12, nav.width-12 {
+  width: 72.75%;
+}
+div.width-13, header.width-13,
+section.width-13, nav.width-13 {
+  width: 79%;
+}
+div.width-14, header.width-14,
+section.width-14, nav.width-14 {
+  width: 85.25%;
+}
+div.width-15, header.width-15,
+section.width-15, nav.width-15 {
+  width: 91.5%;
+}
+div.width-16, header.width-16,
+section.width-16, nav.width-16 {
+  width: 97.75%;
+}
+/* */
+
+
+/* ==========================================================================
+   Paginação
+   ========================================================================== */
+
+#plone-content #content .paginacao {
+    display: block;
+    margin: 20px 0 20px 0;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+#plone-content #content .paginacao li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#plone-content #content .paginacao li a {
+    text-transform: uppercase;
+    min-width: 25px;
+    height: 25px;
+    border: 1px solid #c2c2c2;
+    border-radius: 3px;
+    display: block;
+    line-height: 25px;
+    color: #36424d;
+    margin: 0 4px;
+}
+
+#plone-content #content .paginacao li a:hover,
+#plone-content #content .paginacao li a:focus {
+    text-decoration: underline;
+}
+
+#plone-content #content .paginacao li a.anterior,
+#plone-content #content .paginacao li a.proximo {
+    border: none;
+    width: auto;
+    height: auto;
+    color: #2c66ce;
+}
+
+#plone-content #content .paginacao li a.anterior { margin-right: 26px; }
+#plone-content #content .paginacao li a.proximo { margin-left: 26px; }
+
+#plone-content #content .paginacao li span {
+    font-family: "open_sansbold", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+
+
+/* ==========================================================================
+   Resultado da busca
+   ========================================================================== */
+
+#content .contenttype-news-item {
+    background: none !important;
+    padding-left: 0px !important;
+}
+
+#search-results {
+    width: 64.5% !important;
+    padding: 0;
+    margin-left: 35%;
+}
+
+#search-results > dl.searchResults > dd > span.discreet > span {
+    float: left;
+    width: 100%;
+}
+
+#search-results-bar {
+    margin-top: 25px;
+    padding: 0 !important;
+    width: 33% !important;
+    border-top: 0 none !important;
+    border-top: 0 !important;
+    border-bottom: 0 none !important;
+    border-bottom: 0 !important;
+    background: #fff;
+    font-size: 0.9em;
+}
+
+#search-results-bar > span:first-child {
+    margin: 2px 0 0 20px;
+    width: 90%;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#search-results-bar > span:first-child + dl { margin-left: 20px; }
+
+#content-core form.searchPage dd {
+    overflow: hidden;
+    margin: 0 0 1.5em 0;
+}
+
+#search-filter,
+#search-filter .field { background: transparent !important; }
+#search-filter .field { padding: 1em 0 !important; }
+#search-filter .field div { width: 100%; }
+#search-filter .field input { margin-right: 8px; }
+
+#search-results-wrapper { min-height: 600px; }
+
+.optionsToggle {
+    border: medium none transparent;
+    background-color: transparent;
+    font-size: 100%;
+}
