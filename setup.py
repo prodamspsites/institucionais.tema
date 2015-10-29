@@ -45,6 +45,7 @@ setup(
     install_requires=[
         'Products.CMFPlone >=4.3',
         'setuptools',
+        'prodam.institucionais',
         'plone.app.theming',
         'plone.app.themingplugins',
         'plone.app.contenttypes<1.1a1',

@@ -9,64 +9,33 @@
         <theme href="theme.html" />
 
         <!-- Header -->
-        <replace css:theme-children=".navbar" css:content=".barra-cinza" />
-        <drop css:content="#portal-breadcrumbs" />
-        <drop css:content=".documentByLine" />
+        <replace css:theme-children=".navbar" css:content="#topo" />
         <replace css:content="#portal-personaltools" css:theme="#portal-personaltools" />
         <drop css:theme="#portal-personaltools" css:if-content="body.userrole-anonymous" />
-        <replace css:theme=".services ul" css:content="#portal-siteactions" />
-        <replace css:theme-children=".logo" css:content="#portal-title" />
-        <replace css:theme-children=".sections" css:content="#portal-globalnav" />
-        <replace css:theme-children="#portal-searchbox" css:content-children="#portal-searchbox" />
+        <replace css:theme=".logo" css:content="#titulo" />
 
         <!-- Head elements -->
         <replace css:theme="html head title" css:content="html head title" />
         <after css:theme-children="html head" css:content="html head" />
-
         <copy attributes="class" css:theme="body" css:content="body" />
 
         <!-- Logo -->
         <copy attributes="href" css:theme="#brand" css:content="#portal-logo" />
 
-        <!-- Tabs -->
-        <replace css:theme-children="#tabs" css:content-children="#portal-globalnav" />
-
         <!-- Personal tools -->
         <replace css:theme="#account-info" css:content="#portal-personaltools" />
 
-        <!-- Search -->
-        <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" />
-        <copy attributes="name" css:theme="#searchbox .search-query" css:content="#portal-searchbox form .searchField" />
-
         <!-- Edit bar -->
         <before css:theme-children="#content" css:content="#edit-bar" />
-
-        <!-- Portal messages -->
-
-
 
         <!-- Main columns -->
         <replace css:content="#portal-column-content" css:theme="#portal-column-content" />
         <replace css:content="#portal-column-one" css:theme="#portal-column-one" />
         <replace css:content="#portal-column-two" css:theme="#portal-column-two" />
 
-
-
         <!-- Footer -->
-        <replace css:content="#footer-nav" css:theme=".footer-wrapper" />
-        <drop css:theme=".span12" />
+        <replace css:content="#rodape" css:theme="#footer" />
         <after theme-children="/html/body" css:content-children="#plone-analytics" />
-
-
-        <!-- adiciona classe ao body caso o portlet seção tenha duas colunas -->
-        <replace content="/html/body/@class" css:if-content=".navTreeLevel1">
-            <xsl:attribute name="class"><xsl:value-of select="."/> secao-duas-colunas</xsl:attribute>
-        </replace>
-
-        <!-- adiciona classe ao body caso o portlet seção tenha três colunas -->
-        <replace content="/html/body/@class" css:if-content=".navTreeLevel2">
-            <xsl:attribute name="class"><xsl:value-of select="."/> secao-tres-colunas</xsl:attribute>
-        </replace>
 
     </rules>
 
